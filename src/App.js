@@ -1,7 +1,11 @@
+import Navbar from "./components/Navbar"
+import Routing from "./Routes"
+
 function App() {
   return (
     <div className="App">
-      <h1>APP</h1>
+      <Navbar />
+      <Routing />
     </div>
   )
 }
