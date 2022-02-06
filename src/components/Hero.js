@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <div>
+    <div className="bg-slate-900 text-slate-300 flex">
       <div>
         <h2>Lorem, ipsum.</h2>
         <span>Lorem ipsum dolor sit amet.</span>
@@ -10,6 +10,13 @@ export default function Hero() {
           labore facilis voluptatibus fugiat hic repellat obcaecati aspernatur
           ratione. Consectetur neque dignissimos dolorum.
         </p>
+      </div>
+      <div>
+        <img
+          src={require("../img/megumi.png")}
+          alt="megumi"
+          className="w-[80rem]"
+        />
       </div>
     </div>
   )
