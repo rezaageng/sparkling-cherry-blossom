@@ -10,7 +10,7 @@
     duration-150
     hover:shadow-inner
     text-slate-100
-    hover:bg-slate-900
+    hover:bg-black
     hover:text-slate-300;
   }
 }
