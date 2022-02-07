@@ -5,12 +5,16 @@
 @layer components {
   .nav-li {
     @apply rounded-full
-    p-1
+    px-1
+    py-2
     ease-in-out
     duration-150
     hover:shadow-inner
-    text-slate-100
-    hover:bg-black
-    hover:text-slate-300;
+    hover:bg-gray-200
+    hover:text-gray-600
+    hover:fill-gray-300
+    dark:hover:bg-black
+    dark:hover:text-slate-400
+    dark:hover:fill-slate-500;
   }
 }
