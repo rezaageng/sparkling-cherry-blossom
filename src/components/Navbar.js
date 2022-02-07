@@ -14,6 +14,16 @@ export default function Navbar() {
             Credits
           </Link>
         </li>
+        <li className="nav-li">
+          <a
+            href="https://github.com/rezaageng/sparkling-cherry-blossom"
+            className="p-2"
+            target="_blank"
+            rel="noreferrer"
+          >
+            GitHub
+          </a>
+        </li>
       </ul>
     </nav>
   )
