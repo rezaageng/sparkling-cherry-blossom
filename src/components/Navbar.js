@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom"
+import HomeSVG from "../icons/HomeSVG"
 
 export default function Navbar() {
   return (
-    <nav className="navbar bg-slate-900">
-      <ul className="flex p-3 gap-4">
-        <li className="nav-li">
-          <Link to="/" className="p-2">
-            Home
-          </Link>
-        </li>
+    <nav className="navbar bg-slate-100 dark:bg-slate-900 max-w-7xl m-auto">
+      <ul className="flex py-3 gap-4">
+        <Link to="/" className="p-2 nav-li rounded-xl group">
+          <HomeSVG />
+        </Link>
+
         <li className="nav-li">
           <Link to="/credits" className="p-2">
             Credits
