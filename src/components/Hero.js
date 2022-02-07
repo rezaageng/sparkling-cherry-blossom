@@ -1,3 +1,5 @@
+import rightArrow from "../icons/right-arrow.svg"
+
 export default function Hero() {
   return (
     <div className="bg-pink-600 text-slate-300 flex max-w-7xl m-auto rounded-[3rem]">
@@ -13,6 +15,16 @@ export default function Hero() {
           proportions". Megumi is usually seen with her school uniform, or else,
           casual clothes.
         </p>
+        <h3 className="text-3xl text-yellow-400 font-semibold mt-36">
+          <a
+            href="https://saekano.fandom.com/wiki/Megumi_Kato"
+            target="_blank"
+            rel="noreferrer"
+            className="flex gap-5"
+          >
+            More about Megumi <img src={rightArrow} alt="right arrow" />
+          </a>
+        </h3>
       </div>
       <div className="flex-1">
         <img
