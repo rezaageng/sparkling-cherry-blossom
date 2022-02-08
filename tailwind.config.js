@@ -14,6 +14,9 @@ module.exports = {
           "50%": { transform: "translateX(0)" },
         },
       },
+      screens: {
+        sxl: "1000px",
+      },
     },
   },
   plugins: [],
