@@ -22,7 +22,7 @@ export default function Hero() {
           proportions". Megumi is usually seen with her school uniform, or else,
           casual clothes.
         </p>
-        <div className="group ease-in-out text-3xl text-yellow-400 font-semibold mt-3 sxl:mt-36 md:mt-5 hover:text-yellow-500">
+        <div className="group ease-in-out text-2xl md:text-3xl text-yellow-400 font-semibold mt-3 sxl:mt-36 md:mt-5 hover:text-yellow-500">
           <a
             href="https://saekano.fandom.com/wiki/Megumi_Kato"
             target="_blank"

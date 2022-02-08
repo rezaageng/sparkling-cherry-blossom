@@ -6,9 +6,8 @@ export default function RightArrow() {
       xmlns="http://www.w3.org/2000/svg"
       x="0px"
       y="0px"
-      width="44.952px"
-      height="44.952px"
       viewBox="0 0 44.952 44.952"
+      className=" w-8 md:w-11"
     >
       <g>
         <path
