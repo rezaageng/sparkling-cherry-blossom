@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async"
+import Cute from "../components/Cute"
 import Hero from "../components/Hero"
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
         <title>Sparkling Cherry Blossom</title>
       </Helmet>
       <Hero />
+      <Cute />
     </>
   )
 }
