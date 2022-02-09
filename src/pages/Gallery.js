@@ -6,6 +6,7 @@ export default function Gallery() {
   const [images, setImages] = useState([])
   const [fullscreen, setFullscreen] = useState(false)
   const [imgCute, setImgCute] = useState("")
+  const [imgSrc, setImgSrc] = useState("")
 
   useEffect(() => {
     const booru = new Danbooru("http://safebooru.donmai.us/")
@@ -40,13 +41,15 @@ export default function Gallery() {
           closeBg(e.target)
         }}
       >
-        <img
-          src={imgCute.src}
-          alt="img cute"
-          className="opacity-100 max-w-3xl"
-        />
+        <a href={imgSrc} target="_blank" rel="noopener noreferrer">
+          <img
+            src={imgCute.src}
+            alt="img cute"
+            className="opacity-100 max-w-xl"
+          />
+        </a>
       </div>
-      <div className="max-w-7xl m-auto columns-5 gap-4">
+      <div className="max-w-7xl m-auto columns-2 md:columns-3 lg:columns-4 xl:columns-5 gap-4">
         {images.map((image) => (
           <div key={image.id} className="rounded-3xl mb-4 overflow-hidden">
             <img
@@ -56,6 +59,7 @@ export default function Gallery() {
               onClick={(e) => {
                 setFullscreen(true)
                 setImgCute(e.target)
+                setImgSrc(image.source)
               }}
             />
           </div>
