@@ -28,4 +28,13 @@
     hover:-translate-y-1
     hover:drop-shadow-xl;
   }
+
+  .footer-hover {
+    @apply hover:bg-gray-200
+    hover:text-gray-600
+    hover:fill-gray-300
+    dark:hover:bg-black
+    dark:hover:text-slate-400
+    dark:hover:fill-slate-500;
+  }
 }
