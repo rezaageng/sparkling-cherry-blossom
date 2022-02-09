@@ -45,7 +45,7 @@ export default function Gallery() {
           <img
             src={imgCute.src}
             alt="img cute"
-            className="opacity-100 max-w-xl"
+            className="opacity-100 max-w-xs md:max-w-sm lg:max-w-md xl:max-w-lg"
           />
         </a>
       </div>
