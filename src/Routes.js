@@ -1,12 +1,12 @@
 import { Route, Routes } from "react-router-dom"
-import Credits from "./pages/Credits"
+import Gallery from "./pages/Gallery"
 import Home from "./pages/Home"
 
 export default function Routing() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="credits" element={<Credits />} />
+      <Route path="gallery" element={<Gallery />} />
     </Routes>
   )
 }

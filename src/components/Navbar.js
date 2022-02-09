@@ -10,8 +10,8 @@ export default function Navbar() {
         </Link>
 
         <li className="nav-li">
-          <Link to="/credits" className="p-2">
-            Credits
+          <Link to="/gallery" className="p-2">
+            Gallery
           </Link>
         </li>
         <li className="nav-li">
