@@ -23,9 +23,9 @@
     rounded-3xl
     cursor-pointer
     overflow-hidden
-    transition
+    transition-transform
     ease-in-out
-    hover:-translate-y-1
+    hover:-translate-y-2
     hover:drop-shadow-xl;
   }
 
