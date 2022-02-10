@@ -11,7 +11,7 @@ export default function Gallery() {
   useEffect(() => {
     const booru = new Danbooru("http://safebooru.donmai.us/")
     async function getImage() {
-      const request = await booru.posts({ tags: "katou_megumi", limit: 75 })
+      const request = await booru.posts({ tags: "katou_megumi", limit: 25 })
 
       setImages(request)
     }
