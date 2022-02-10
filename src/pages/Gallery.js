@@ -1,4 +1,3 @@
-import Danbooru from "danbooru"
 import { useEffect, useState } from "react"
 import { Helmet } from "react-helmet-async"
 import Alert from "../components/Alert"
@@ -12,11 +11,13 @@ export default function Gallery() {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    const booru = new Danbooru("http://safebooru.donmai.us/")
     async function getImage() {
-      const request = await booru.posts({ tags: "katou_megumi", limit: 25 })
+      const response = await fetch(
+        "https://safebooru.donmai.us/posts.json?page=1&tags=katou_megumi&limit=24"
+      )
+      const data = await response.json()
 
-      setImages(request)
+      setImages(data)
       setLoading(false)
     }
     getImage()
