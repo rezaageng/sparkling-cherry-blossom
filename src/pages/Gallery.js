@@ -1,6 +1,7 @@
 import Danbooru from "danbooru"
 import { useEffect, useState } from "react"
 import { Helmet } from "react-helmet-async"
+import Alert from "../components/Alert"
 import Loading from "../components/Loading"
 
 export default function Gallery() {
@@ -55,22 +56,25 @@ export default function Gallery() {
       {loading ? (
         <Loading />
       ) : (
-        <div className="max-w-7xl m-auto columns-2 md:columns-3 lg:columns-4 xl:columns-5 gap-4">
-          {images.map((image) => (
-            <div key={image.id} className="rounded-3xl mb-4 overflow-hidden">
-              <img
-                src={image.file_url}
-                alt="katou"
-                className="transition-transform hover:scale-110 hover:cursor-pointer"
-                onClick={(e) => {
-                  setFullscreen(true)
-                  setImgCute(e.target)
-                  setImgSrc(image.source)
-                }}
-              />
-            </div>
-          ))}
-        </div>
+        <>
+          <div className="max-w-7xl m-auto columns-2 md:columns-3 lg:columns-4 xl:columns-5 gap-4">
+            {images.map((image) => (
+              <div key={image.id} className="rounded-3xl mb-4 overflow-hidden">
+                <img
+                  src={image.file_url}
+                  alt="katou"
+                  className="transition-transform hover:scale-110 hover:cursor-pointer"
+                  onClick={(e) => {
+                    setFullscreen(true)
+                    setImgCute(e.target)
+                    setImgSrc(image.source)
+                  }}
+                />
+              </div>
+            ))}
+          </div>
+          <Alert />
+        </>
       )}
     </>
   )
