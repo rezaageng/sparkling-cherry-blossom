@@ -25,7 +25,7 @@ export default function Footer() {
             className="group flex gap-2 footer-hover"
           >
             <Pixiv />
-            Original artworks
+            Original artwork
           </a>
         </li>
       </ul>
