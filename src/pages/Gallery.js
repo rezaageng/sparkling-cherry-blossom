@@ -74,7 +74,7 @@ export default function Gallery() {
               </div>
             ))}
           </div>
-          <Alert />
+          {!localStorage.getItem("alert") && <Alert />}
         </>
       )}
     </>

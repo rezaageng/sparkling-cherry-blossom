@@ -1,6 +1,8 @@
 export default function Alert() {
   function closeAlert(el) {
     if (el.tagName !== "BUTTON") return
+
+    localStorage.setItem("alert", "true")
     return el.parentElement.classList.toggle("hidden")
   }
 
